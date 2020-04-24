@@ -14,69 +14,81 @@
 
     <h1>Calculator</h1>
 
-    <!-- ADD FORM -->
-    <form /*action=""*/ id="add">
-      <div class="form-group">
-        <label for="add1">1st Number:</label>
-        <input type="text" id="add1" class="form-control">
-      </div>
+    <div class="grid-container">
 
-      <div class="form-group">
-        <label for="add2">2nd Number:</label>
-        <input type="text" id="add2" class="form-control">
-      </div>
-
-      <button class="btn" type="submit">Add</button>
-    </form>
+      <!-- ADD FORM -->
+      <div class="grid-item">
+        <form /*action=""*/ id="add">
+          <div class="form-group">
+            <label for="add1">1st Number:</label>
+            <input type="text" id="add1" class="form-control">
+          </div>
     
-    <!-- SUBTRACT FORM -->
-    <form /*action=""*/ id="subtract">
-      <div class="form-group">
-        <label for="subtract1">1st Number:</label>
-        <input type="text" id="subtract1" class="form-control">
+          <div class="form-group">
+            <label for="add2">2nd Number:</label>
+            <input type="text" id="add2" class="form-control">
+          </div>
+    
+          <button class="btn" type="submit">Add</button>
+        </form>
+      </div>
+    
+      <!-- SUBTRACT FORM -->
+      <div class="grid-item">
+        <form /*action=""*/ id="subtract">
+          <div class="form-group">
+            <label for="subtract1">1st Number:</label>
+            <input type="text" id="subtract1" class="form-control">
+          </div>
+    
+          <div class="form-group">
+            <label for="subtract2">2nd Number:</label>
+            <input type="text" id="subtract2" class="form-control">
+          </div>
+    
+          <button class="btn" type="submit">Subtract</button>
+        </form>
+      </div>
+  
+      <!-- MULTIPLY FORM -->
+      <div class="grid-item">
+        <form /*action=""*/ id="multiply">
+          <div class="form-group">
+            <label for="multiply1">1st Number:</label>
+            <input type="text" id="multiply1" class="form-control">
+          </div>
+    
+          <div class="form-group">
+            <label for="multiply2">2nd Number:</label>
+            <input type="text" id="multiply2" class="form-control">
+          </div>
+    
+          <button class="btn" type="submit">Multiply</button>
+        </form>
+      </div>   
+
+      <!-- DIVIDE FORM -->
+      <div class="grid-item">
+        <form /*action=""*/ id="divide">
+          <div class="form-group">
+            <label for="divide1">1st Number:</label>
+            <input type="text" id="divide1" class="form-control">
+          </div>
+    
+          <div class="form-group">
+            <label for="divide2">2nd Number:</label>
+            <input type="text" id="divide2" class="form-control">
+          </div>
+    
+          <button class="btn" type="submit">Divide</button>
+        </form>
       </div>
 
-      <div class="form-group">
-        <label for="subtract2">2nd Number:</label>
-        <input type="text" id="subtract2" class="form-control">
-      </div>
+    </div> <!-- END OF DIV.GRID-CONTAINER -->
 
-      <button class="btn" type="submit">Subtract</button>
-    </form>
-
-    <!-- MULTIPLY FORM -->
-    <form /*action=""*/ id="multiply">
-      <div class="form-group">
-        <label for="multiply1">1st Number:</label>
-        <input type="text" id="multiply1" class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="multiply2">2nd Number:</label>
-        <input type="text" id="multiply2" class="form-control">
-      </div>
-
-      <button class="btn" type="submit">Multiply</button>
-    </form>
-
-    <!-- DIVIDE FORM -->
-
-    <form /*action=""*/ id="divide">
-      <div class="form-group">
-        <label for="divide1">1st Number:</label>
-        <input type="text" id="divide1" class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="divide2">2nd Number:</label>
-        <input type="text" id="divide2" class="form-control">
-      </div>
-
-      <button class="btn" type="submit">Divide</button>
-    </form>
-
-    <div id="output">
-
+    <div>
+      <h3>Result will appear below:</h3>
+      <p id="output"></p>
     </div>
     
   </div>
