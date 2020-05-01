@@ -6,7 +6,7 @@
 
 ## Description
 
-The purpose of this project is to use javascript, jQuery and forms to build a calculator with the capability to add, subtract, multiply and divide. This project is also a practice in proper organization of javascript into business logic and user interface logic.
+The purpose of this project is to use javascript, jQuery, forms and branching to build a calculator with the capability to add, subtract, multiply and divide. This project is also a practice in proper organization of javascript into business logic and user interface logic.
 
 ## Setup/Installation Requirements
 
