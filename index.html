@@ -15,81 +15,56 @@
     <h1>Calculator</h1>
 
     <div class="grid-container">
+        <!-- NEW FORM TO COMBINE ALL 4 -->
 
-      <!-- ADD FORM -->
-      <div class="grid-item">
-        <form /*action=""*/ id="add">
-          <div class="form-group">
-            <label for="add1">1st Number:</label>
-            <input type="text" id="add1" class="form-control">
-          </div>
-    
-          <div class="form-group">
-            <label for="add2">2nd Number:</label>
-            <input type="text" id="add2" class="form-control">
-          </div>
-    
-          <button class="btn" type="submit">Add</button>
-        </form>
-      </div>
-    
-      <!-- SUBTRACT FORM -->
-      <div class="grid-item">
-        <form /*action=""*/ id="subtract">
-          <div class="form-group">
-            <label for="subtract1">1st Number:</label>
-            <input type="text" id="subtract1" class="form-control">
-          </div>
-    
-          <div class="form-group">
-            <label for="subtract2">2nd Number:</label>
-            <input type="text" id="subtract2" class="form-control">
-          </div>
-    
-          <button class="btn" type="submit">Subtract</button>
-        </form>
-      </div>
-  
-      <!-- MULTIPLY FORM -->
-      <div class="grid-item">
-        <form /*action=""*/ id="multiply">
-          <div class="form-group">
-            <label for="multiply1">1st Number:</label>
-            <input type="text" id="multiply1" class="form-control">
-          </div>
-    
-          <div class="form-group">
-            <label for="multiply2">2nd Number:</label>
-            <input type="text" id="multiply2" class="form-control">
-          </div>
-    
-          <button class="btn" type="submit">Multiply</button>
-        </form>
-      </div>   
+        <form action="" id="calculator" class="grid-item">
 
-      <!-- DIVIDE FORM -->
-      <div class="grid-item">
-        <form /*action=""*/ id="divide">
           <div class="form-group">
-            <label for="divide1">1st Number:</label>
-            <input type="text" id="divide1" class="form-control">
+            <label for="number1">1st Number:</label>
+            <input type="number" id="number1" class="form-control">
           </div>
-    
+
           <div class="form-group">
-            <label for="divide2">2nd Number:</label>
-            <input type="text" id="divide2" class="form-control">
+            <label for="number2">2nd Number:</label>
+            <input type="number" id="number2" class="form-control">
           </div>
-    
-          <button class="btn" type="submit">Divide</button>
+
+          <div class="radio">
+            <label for="add">
+              <input type="radio" id="add" name="operator" value="add" checked>
+              Add
+            </label>
+          </div>
+
+          <div class="radio">
+            <label for="subtract">
+              <input type="radio" id="subtract" name="operator" value="subtract">
+              Subtract
+            </label>
+          </div>
+
+          <div class="radio">
+            <label for="multiply">
+              <input type="radio" id="multiply" name="operator" value="multiply">
+              Multiply
+            </label>
+          </div>
+
+          <div class="radio">
+            <label for="divide">
+              <input type="radio" id="divide" name="operator" value="divide">
+              Divide
+            </label>
+          </div>
+
+          <button class="btn" type="submit">Calculate</button>
+        
         </form>
-      </div>
 
-    </div> <!-- END OF DIV.GRID-CONTAINER -->
-
-    <div>
-      <h3>Result will appear below:</h3>
-      <p id="output"></p>
-    </div>
+        <div class="grid-item">
+          <h3>Result will appear below:</h3>
+          <p id="output"></p>
+        </div>
     
   </div>
 </body>
